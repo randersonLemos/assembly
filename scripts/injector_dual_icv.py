@@ -6,7 +6,7 @@ def injector_dual_icv(well, group, fluid, operate, monitor
         , open_time, on_time, layerclump
         , icv_start, icv_control, output_folder):
 
-    from well2.scripts.frames.inje_dual_icv import Inje_Dual_ICV
+    from well.scripts.frames.inje_dual_icv import Inje_Dual_ICV
 
     w = Inje_Dual_ICV(well, group)
 

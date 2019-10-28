@@ -4,7 +4,7 @@ import pathlib
 def injector_dual_wag(well, group, operate, monitor, geometry, perf
         , completion, open_time, on_time, wag_start, layerclump, output_folder):
 
-    from well2.scripts.frames.inje_dual_wag import Inje_Dual_Wag
+    from well.scripts.frames.inje_dual_wag import Inje_Dual_Wag
 
     w = Inje_Dual_Wag(well, group)
 

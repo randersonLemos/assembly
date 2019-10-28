@@ -5,7 +5,7 @@ def producer_dual_icv(well, group, operate, monitor, geometry, perf
         , completion, open_time, on_time, layerclump
         , icv_start, icv_control, output_folder):
 
-    from well2.scripts.frames.prod_dual_icv import Prod_Dual_ICV
+    from well.scripts.frames.prod_dual_icv import Prod_Dual_ICV
 
     w = Prod_Dual_ICV(well, group)
 

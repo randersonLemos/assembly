@@ -90,8 +90,8 @@ if __name__ == '__main__':
     from os import sys, path
     sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
 
-    from scripts.producer_dual_icv import producer_dual_icv
-    from dic2.scripts.dictionary import Keywords as kw
+    from assembly.scripts.producer_dual_icv import producer_dual_icv
+    from dictionary.scripts.dictionary import Keywords as kw
 
     cont_repeat = '{} {}'.format(kw.cont(), kw.repeat())
 
