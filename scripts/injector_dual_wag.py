@@ -23,13 +23,17 @@ def injector_dual_wag(well, group, operate, monitor, geometry, perf
     for com in (completion):
         w.get_completion(com)
 
-    w.get_on_time(on_time)
-    w.get_open(*open_time)
+    if on_time:
+        w.get_on_time(on_time)
+
+    if open_time:
+        w.get_open(*open_time)
 
     for lay in layerclump:
         w.get_layerclump(lay)
 
-    w.get_wag(*wag_start)
+    if wag_start:
+        w.get_wag(*wag_start)
 
     w.build()
     w.write(pathlib.Path(output_folder) / '{}.inc'.format(well))
